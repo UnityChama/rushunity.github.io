@@ -1,0 +1,103 @@
+body {
+    background-color: #121212; /* Thème sombre */
+    color: #ffffff;
+}
+.card {
+    background-color: #1f1f1f; /* Couleur des cartes */
+    border: none;
+    overflow: hidden; /* Pour éviter que l'image dépasse de la carte */
+}
+.card img {
+    border-radius: 0.5rem 0.5rem 0 0; /* Coins arrondis de l'image */
+    transition: transform 0.3s ease; /* Transition pour l'effet de zoom */
+}
+.card:hover {
+    transform: scale(1.05); /* Effet de zoom */
+}
+.card a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.card a:hover {
+    text-decoration: underline;
+}
+.card-title {
+    color: #ffffff; /* Couleur blanche pour le titre de la carte */
+}
+.card a {
+    display: block;
+    text-decoration: none;
+}
+
+
+.air, .eau , .terre, .feu {
+    margin-bottom: 100px; /* Espacement entre les sections */
+}
+.section-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+body {
+    position: relative; /* Nécessaire pour le positionnement de l'aside */
+    scroll-behavior: smooth; /* Défilement fluide */
+}
+aside {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #1f1f1f; /* Couleur sombre */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+aside a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+.section-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 3rem; /* Taille plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: #F0C300; /* Couleur vive pour attirer l’attention */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ombre portée */
+    text-transform: uppercase; /* Majuscules */
+    letter-spacing: 3px; /* Espacement des lettres */
+    border-bottom: 3px solid #F0C300; /* Ligne en dessous */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Espacement entre les images et le texte */
+}
+
+
+.title-image {
+    width: 50px; /* Largeur de l'image */
+    height: auto; /* Conserve les proportions */
+    transform-origin: center; /* Centre de rotation */
+}
+
+.title-image:first-of-type {
+    transform: rotate(-10deg); /* Inclinaison vers la gauche */
+}
+
+.title-image:last-of-type {
+    transform: rotate(10deg); /* Inclinaison vers la droite */
+}
